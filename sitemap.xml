@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://qwanturank.life/</loc>
+  <lastmod>2020-01-21T14:45:46+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://qwanturank.life/pages/seo.html</loc>
+  <lastmod>2020-01-21T14:45:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://qwanturank.life/pages/qwant.html</loc>
+  <lastmod>2020-01-21T14:45:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://qwanturank.life/index.html</loc>
+  <lastmod>2020-01-21T14:45:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
