@@ -1,0 +1,4 @@
+User-agent: Qwantify
+Disallow:
+
+Sitemap: https://qwanturank.life/sitemap.xml
