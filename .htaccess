@@ -1,11 +1,5 @@
 ErrorDocument 404 /404.php
 
 RewriteEngine On
-RewriteCond %{SERVER_PORT} 21
-RewriteCond %{REQUEST_URI} !
-RewriteRule ^(.*)$ https://www.qwanturank.life/ [R=301,L]
-
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^qwanturank.life [NC]
-RewriteCond %{REQUEST_URI} !
-RewriteRule ^(.*)$ https://www.qwanturank.life/ [L,R=301,NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://qwanturank.life%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
