@@ -9,11 +9,3 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^qwanturank.life [NC]
 RewriteCond %{REQUEST_URI} !
 RewriteRule ^(.*)$ https://www.qwanturank.life/ [L,R=301,NC]
-
-RewriteEngine on
-RewriteBase /
-RewriteCond %{http_host} ^qwanturank.life [nc]
-RewriteRule ^(.*)$ https://www.qwanturank.life/ [r=301,nc]
-
-RewriteCond %{HTTP_HOST} !^qwanturank.life$ [NC]
-RewriteRule .? https://www.qwanturank.life%{REQUEST_URI} [R=301,L]
