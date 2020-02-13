@@ -1,9 +1,3 @@
-ErrorDocument 404 /404.php
-
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://qwanturank.life%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
 # Cached resources - Expire headers
 <IfModule mod_expires.c>
 	ExpiresActive On
@@ -25,3 +19,11 @@ RewriteRule ^(.*)$ https://qwanturank.life%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 	ExpiresByType application/x-javascript 	"access plus 1 week"
 	ExpiresByType application/x-shockwave-flash "access plus 1 week"
 </IfModule>
+
+# Redirections 
+
+ErrorDocument 404 /404.php
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://qwanturank.life%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
