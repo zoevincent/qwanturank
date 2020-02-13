@@ -24,10 +24,12 @@
 
 ErrorDocument 404 /404.php
 
+# Redirect http to https
 RewriteEngine On
-RewriteCond %{SERVER_PORT} 21
-RewriteCond %{REQUEST_URI} !
-RewriteRule ^(.*)$ https://www.qwanturank.life/ [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-RewriteCond %{HTTP_HOST} !^qwanturank.life$ [NC]
-RewriteRule .? https://qwanturank.life%{REQUEST_URI} [R=301,L]
+# Redirect non-www to www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^qwanturank\.life [NC]
+RewriteRule ^(.*)$ https://www.qwanturank.life/$1 [L,R=301]
